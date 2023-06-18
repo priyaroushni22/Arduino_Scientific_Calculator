@@ -4,7 +4,7 @@
 
 //used 'D' for enter
 
-LiquidCrystal lcd(3,2,12,13,11,10);
+LiquidCrystal lcd(13,11,5,4,3,2);
 
 const byte ROWS = 4;
 const byte COLS = 4;
@@ -14,8 +14,8 @@ char keys[ROWS][COLS] = {
   {'7','8','9','C'},
   {'#','0','*','D'}
 };
-byte rowPins[ROWS] = {5, 4,15,14};
-byte colPins[COLS] = {8, 7, 6,9};
+byte rowPins[ROWS] = {6,7,8,9};
+byte colPins[COLS] = {10,13,15,14};
 
 String show_val = "";
 double prev_val = 0;
